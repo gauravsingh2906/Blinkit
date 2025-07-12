@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ivCategoryImage"
+    android:layout_margin="2.40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_product_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amulic1" />
+
+    <TextView
+        android:id="@+id/tvCategoryTitle"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_margin="6.50dp"
+        android:ellipsize="end"
+        android:text="Vegetables and Fruits"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
