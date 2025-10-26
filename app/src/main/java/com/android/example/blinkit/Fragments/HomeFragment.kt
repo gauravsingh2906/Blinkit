@@ -168,7 +168,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun fetchBestSellers() {
-        binding.shimmer.visibility=View.VISIBLE   //kisi ke baap ke bass ki nhi
+        binding.shimmer.visibility=View.VISIBLE
         lifecycleScope.launch {
             viewModel.fetchProductTypes().collect{
                 adapter=AdapterBestSellers(::onSeeAllButtonClicked)

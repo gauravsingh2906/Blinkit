@@ -112,46 +112,55 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvBestseller"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_180sdp"
-                android:layout_margin="@dimen/_5sdp"
-                android:layout_marginHorizontal="@dimen/_6sdp"
-                android:layout_marginStart="6dp"
-                android:orientation="horizontal"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:layout_constraintBottom_toTopOf="@+id/llCategories"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rvBestseller"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_180sdp"-->
+<!--                android:layout_margin="@dimen/_5sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_6sdp"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <!-- Shimmer -->
             <com.facebook.shimmer.ShimmerFrameLayout
                 android:id="@+id/shimmer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/llCategories"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="@dimen/_180sdp"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"
                 app:layout_constraintStart_toStartOf="parent"
-                >
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <include layout="@layout/item_view_bestseller_shimmer"/>
-                    <include layout="@layout/item_view_bestseller_shimmer"/>
-                    <include layout="@layout/item_view_bestseller_shimmer"/>
-                    <include layout="@layout/item_view_bestseller_shimmer"/>
 
-
+                    <include layout="@layout/item_view_bestseller_shimmer" />
+                    <include layout="@layout/item_view_bestseller_shimmer" />
+                    <include layout="@layout/item_view_bestseller_shimmer" />
+                    <include layout="@layout/item_view_bestseller_shimmer" />
                 </LinearLayout>
-
-
-
             </com.facebook.shimmer.ShimmerFrameLayout>
 
-
+            <!-- Best Seller Recycler -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBestseller"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                 />
 
 
             <LinearLayout
@@ -160,6 +169,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
+
                 app:layout_constraintTop_toBottomOf="@+id/rvBestseller">
 
 
@@ -171,7 +181,7 @@
                     android:text="Shop By Category"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvCategories"
@@ -179,12 +189,14 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/_5sdp"
-                    tools:listitem="@layout/item_view_product_category"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                    app:spanCount="4"/>
+                    app:spanCount="4"
+                    tools:listitem="@layout/item_view_product_category" />
 
 
             </LinearLayout>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

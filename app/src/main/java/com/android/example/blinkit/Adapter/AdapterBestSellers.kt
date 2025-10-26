@@ -52,11 +52,11 @@ class AdapterBestSellers(val onSeeAllButtonClicked: (BestSeller) -> Unit) :Recyc
 
             Log.d("min",{minSize}.toString())
 
-            for(i in 0 until minSize) {
-                listofIv[i].visibility= View.VISIBLE
-                Picasso.get().load(producttype.products[i].productImageUris?.get(i)).into(listofIv[i])
-                //Glide.with(holder.itemView).load(producttype.products[i].productImageUris?.get(0)).into(listofIv[i])
-            }
+//            for(i in 0 until minSize) {
+//                listofIv[i].visibility= View.VISIBLE
+//                Picasso.get().load(producttype.products[i].productImageUris?.get(i)).into(listofIv[i])
+//                //Glide.with(holder.itemView).load(producttype.products[i].productImageUris?.get(0)).into(listofIv[i])
+//            }
 
             if(producttype.products?.size!!>3) {
                 tvProductCount.visibility=View.VISIBLE
