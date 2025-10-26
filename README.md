@@ -11,7 +11,7 @@ It integrates **Firebase Phone Authentication**, **Realtime Database**, and **St
 
 | Home | Products | Orders | Orders Detail | Profile |
 |------|----------|----------|----------------|
-| ![Home](blinkit/screenshots/blinkit_home.png) | ![Products](blinkit/screenshots/blinkit_product.png) | ![Orders](blinkit/screenshots/blinkit_orders.png) | ![Orders Detail](blinkit/screenshots/blinkit_order_detail.png) | ![Profile](blinkit/screenshots/blinkit_profile.png) |
+| ![Home](screenshots/blinkit_home.jpg) | ![Products](screenshots/blinkit_product.jpg) | ![Orders](screenshots/blinkit_orders.jpg) | ![Orders Detail](screenshots/blinkit_order_detail.jpg) | ![Profile](screenshots/blinkit_profile.jpg) |
 
 ---
 
