@@ -13,11 +13,6 @@ It integrates **Firebase Phone Authentication**, **Realtime Database**, and **St
 |--------------|---------------|------------|-------------|
 | ![Home](screenshots/blinkit_home.jpg) | ![Products](screenshots/blinkit_product.jpg) | ![Orders](screenshots/blinkit_orders.jpg) | ![Orders Detail](screenshots/blinkit_order_detail.jpg) |
 
-
-| Home Screen | Quiz Screen | Result | Full Result Questions |
-|--------------|---------------|------------|-------------|
-| ![Home](screenshots/quiz_home.jpg) | ![Search](screenshots/quiz_questions.jpg) | ![Result](screenshots/quiz_result.jpg) | ![Result Questions](screenshots/quiz_result_screen.jpg) |
-
 ---
 
 ## 🚀 Features
